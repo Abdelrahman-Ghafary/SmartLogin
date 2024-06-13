@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- FontAwesome Css -->
+     <link rel="stylesheet" href="css/all.min.css">
+    <!-- BootStrab Css -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style Css -->
+     <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar shadow-lg">
+        <div class="container">
+          <a class="navbar-brand text-white">SMART LOGIN</a>
+          <form class="d-flex" role="search">
+    
+            <button class="btn btn-outline-warning"  type="submit"> <a class="text-white text-decoration-none" href="index.html">LogOut</a> </button>
+          </form>
+        </div>
+      </nav>
+   <div class="d-flex justify-content-center align-items-center align-content-center">
+    <div id="welcomeM" class="form p-5 my-5 rounded text-center  w-50 mx-auto">
+
+        <h1 id="WelcomeMessage">Welcome </h1>
+       
+        <h1 id="date"></h1>
+        <h1 id="time"></h1>
+        
+</div>
+   </div>
+
+
+
+<!-- BootStrab Js -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Mine JS -->
+     <script src="js/mine.js"></script>
+     
+   <script>
+
+    document.getElementById("WelcomeMessage").innerHTML +=localStorage.getItem("user");
+
+    
+    // Create a new Date object
+var currentDate = new Date();
+
+// Get the current date components
+var day = currentDate.getDate(); // Get the day of the month (1-31)
+var month = currentDate.getMonth() + 1; // Get the month (0-11, add 1 for human-readable format)
+var year = currentDate.getFullYear(); // Get the full year (e.g., 2024)
+
+// Get the current time components
+var hours = currentDate.getHours(); // Get the hour (0-23)
+var minutes = currentDate.getMinutes(); // Get the minutes (0-59)
+var seconds = currentDate.getSeconds(); // Get the seconds (0-59)
+
+// Format the date and time as desired
+var formattedDate = year + "-" + month + "-" + day; // Format: YYYY-MM-DD
+var formattedTime = hours + ":" + minutes + ":" + seconds; // Format: HH:MM:SS
+
+// Display the date and time
+console.log("Current date:", formattedDate);
+console.log("Current time:", formattedTime);
+
+
+document.getElementById("date").innerHTML =" تاريخ الدخول :" + formattedDate;
+document.getElementById("time").innerHTML =" وقت الدخول :" + formattedTime;
+   </script>
+     
+</body>
+</html>

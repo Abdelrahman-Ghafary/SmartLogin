@@ -1,0 +1,30 @@
+body,#FormData
+{
+    background-color: #24353f;
+}
+
+#FormData
+{
+    box-shadow: black 10px 10px 30px 10px;
+}
+h1
+{
+    color: #17a2b8;
+}
+
+#FormData input 
+{
+ 
+    border: solid #ced4da 1px;
+}
+
+#welcomeM
+{
+    box-shadow: black 10px 10px 30px 10px;
+}
+#WelcomeMessage
+{
+    color: #17a2b8;
+
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- BootStrab Css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div id="FormData" class="form p-5 my-5 rounded text-center  w-50 mx-auto">
+        <h1>Smart Login System</h1>
+        <input id="signUpName" required type="text" oninput="" class="form-control py-2 my-3  " placeholder="Enter Your Name">
+       
+        
+        <input id="signUpEmail" type="email" oninput="" class="form-control py-2 my-3 " placeholder="Enter Your Email">
+        
+       
+        <input id="signUpPassword" oninput="" type="password" class="form-control py-2 my-3 " placeholder="Enter Your Password">
+        <div id="alertdan" class="alert alert-danger d-none" role="alert">
+        All Input Is required
+           </div>
+           <div id="alertsuc" class="alert alert-success d-none" role="alert">
+           Success
+          </div>
+        <button onclick="addUser();" class="btn btn-outline-info py-2 w-100">Sign Up</button>
+        <p class="py-2 my-3 text-white">You have an account? <span><a href="index.html" class="text-white fw-bolder text-decoration-none">
+                    Sign In</a></span> </p>
+    </div>
+
+
+
+    <!-- BootStrab Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Mine JS -->
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
